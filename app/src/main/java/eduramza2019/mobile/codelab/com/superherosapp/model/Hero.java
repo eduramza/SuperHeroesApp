@@ -1,34 +1,43 @@
 package eduramza2019.mobile.codelab.com.superherosapp.model;
 
+import android.graphics.Bitmap;
+
 import com.google.gson.annotations.SerializedName;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Hero {
-
+    @SerializedName("response")
+    private String response;
     @SerializedName("id")
-    private int id;
+    private String id;
     @SerializedName("name")
     private String name;
     @SerializedName("powerstats")
-    private List<Powerstats> powerstats= new ArrayList<>();
+    private Powerstats powerstats;
     @SerializedName("biography")
-    private List<Biography> biographies = new ArrayList<>();
+    private Biography biographies;
     @SerializedName("appearence")
-    private List<Appearance> appearances = new ArrayList<>();
+    private Appearance appearances;
     @SerializedName("work")
-    private List<Work> works = new ArrayList<>();
+    private Work works;
     @SerializedName("connections")
-    private List<Connections> connections = new ArrayList<>();
+    private Connections connections;
     @SerializedName("image")
-    private String urlImage;
+    private Bitmap image;
 
-    public int getId() {
+
+    public String getResponse() {
+        return response;
+    }
+
+    public void setResponse(String response) {
+        this.response = response;
+    }
+
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -40,51 +49,51 @@ public class Hero {
         this.name = name;
     }
 
-    public List<Powerstats> getPowerstats() {
+    public Powerstats getPowerstats() {
         return powerstats;
     }
 
-    public void setPowerstats(List<Powerstats> powerstats) {
+    public void setPowerstats(Powerstats powerstats) {
         this.powerstats = powerstats;
     }
 
-    public List<Biography> getBiographies() {
+    public Biography getBiographies() {
         return biographies;
     }
 
-    public void setBiographies(List<Biography> biographies) {
+    public void setBiographies(Biography biographies) {
         this.biographies = biographies;
     }
 
-    public List<Appearance> getAppearances() {
+    public Appearance getAppearances() {
         return appearances;
     }
 
-    public void setAppearances(List<Appearance> appearances) {
+    public void setAppearances(Appearance appearances) {
         this.appearances = appearances;
     }
 
-    public List<Work> getWorks() {
+    public Work getWorks() {
         return works;
     }
 
-    public void setWorks(List<Work> works) {
+    public void setWorks(Work works) {
         this.works = works;
     }
 
-    public List<Connections> getConnections() {
+    public Connections getConnections() {
         return connections;
     }
 
-    public void setConnections(List<Connections> connections) {
+    public void setConnections(Connections connections) {
         this.connections = connections;
     }
 
-    public String getUrlImage() {
-        return urlImage;
+    public Bitmap getImage() {
+        return image;
     }
 
-    public void setUrlImage(String urlImage) {
-        this.urlImage = urlImage;
+    public void setImage(Bitmap image) {
+        this.image = image;
     }
 }

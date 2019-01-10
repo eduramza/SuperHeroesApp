@@ -11,15 +11,15 @@ public class Appearance {
     @SerializedName("race")
     private String race;
     @SerializedName("height")
-    private List<Integer> height = new ArrayList<>();
+    private List<String> height;
     @SerializedName("weight")
-    private List<Integer> weight = new ArrayList<>();
+    private List<String> weight;
     @SerializedName("eye-color")
     private String eyeColor;
     @SerializedName("hair-color")
     private String hairColor;
 
-    public Appearance(String gender, String race, List<Integer> height, List<Integer> weight,
+    public Appearance(String gender, String race, List<String> height, List<String> weight,
                       String eyeColor, String hairColor){
         this.gender = gender;
         this.race = race;
@@ -45,19 +45,19 @@ public class Appearance {
         this.race = race;
     }
 
-    public List<Integer> getHeight() {
+    public List<String> getHeight() {
         return height;
     }
 
-    public void setHeight(List<Integer> height) {
+    public void setHeight(List<String> height) {
         this.height = height;
     }
 
-    public List<Integer> getWeight() {
+    public List<String> getWeight() {
         return weight;
     }
 
-    public void setWeight(List<Integer> weight) {
+    public void setWeight(List<String> weight) {
         this.weight = weight;
     }
 

@@ -12,7 +12,7 @@ public class Biography {
     @SerializedName("alter-egos")
     private String alterEgos;
     @SerializedName("aliases")
-    private List<Integer> aliases = new ArrayList<>();
+    private List<String> aliases;
     @SerializedName("place-of-birth")
     private String placeOfBirth;
     @SerializedName("first-appearence")
@@ -22,7 +22,7 @@ public class Biography {
     @SerializedName("alignment")
     private String alignment;
 
-    public Biography(String fullName, String alterEgos, List<Integer> aliases, String placeOfBirth, String firstAppearence,
+    public Biography(String fullName, String alterEgos, List<String> aliases, String placeOfBirth, String firstAppearence,
                      String publisher, String alignment){
         this.fullName = fullName;
         this.alterEgos = alterEgos;
@@ -49,11 +49,11 @@ public class Biography {
         this.alterEgos = alterEgos;
     }
 
-    public List<Integer> getAliases() {
+    public List<String> getAliases() {
         return aliases;
     }
 
-    public void setAliases(List<Integer> aliases) {
+    public void setAliases(List<String> aliases) {
         this.aliases = aliases;
     }
 
