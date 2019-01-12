@@ -1,6 +1,7 @@
 package eduramza2019.mobile.codelab.com.superherosapp.model;
 
 import android.graphics.Bitmap;
+import android.net.Uri;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -22,7 +23,19 @@ public class Hero {
     @SerializedName("connections")
     private Connections connections;
     @SerializedName("image")
-    private Bitmap image;
+    private HeroImage image;
+
+    public Hero(String response, String id, Powerstats powerstats, Biography biographies, Appearance appearances,
+                Work works, Connections connections, HeroImage image){
+        this.response = response;
+        this.id = id;
+        this.powerstats = powerstats;
+        this.biographies = biographies;
+        this.appearances = appearances;
+        this.works = works;
+        this.connections = connections;
+        this.image = image;
+    }
 
 
     public String getResponse() {
@@ -89,11 +102,11 @@ public class Hero {
         this.connections = connections;
     }
 
-    public Bitmap getImage() {
+    public HeroImage getImage() {
         return image;
     }
 
-    public void setImage(Bitmap image) {
+    public void setImage(HeroImage image) {
         this.image = image;
     }
 }

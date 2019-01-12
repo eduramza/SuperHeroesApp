@@ -1,3 +1,5 @@
 Models;
 rest nessa fase a classe modelo foi modificada branch: retrofit_config_initials;
+create the list and listing the heroes in recycler_view, adapters e alteração na main, também foram realizadas modificações
+na classe modelo Hero e a criação de uma nova classe chamada HeroesResponse que trata uma lista de Hero;
 

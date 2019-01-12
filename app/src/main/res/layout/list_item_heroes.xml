@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/heroes_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/recicler_padding"
+    android:paddingTop="@dimen/recicler_padding"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_hero"
+            android:layout_width="@dimen/image_view_tam"
+            android:layout_height="@dimen/image_view_tam"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SuperMan"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_name_recycler"
+            android:layout_marginLeft="@dimen/med_margin"
+            app:layout_constraintLeft_toRightOf="@id/im_hero"/>
+
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clark Kent"
+            app:layout_constraintLeft_toRightOf="@id/im_hero"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            android:layout_marginTop="@dimen/min_margin"
+            android:layout_marginLeft="@dimen/med_margin" />
+
+        <TextView
+            android:id="@+id/tv_alignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="good"
+            app:layout_constraintLeft_toRightOf="@id/im_hero"
+            app:layout_constraintTop_toBottomOf="@id/tv_full_name"
+            android:layout_marginTop="@dimen/min_margin"
+            android:layout_marginLeft="@dimen/med_margin"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

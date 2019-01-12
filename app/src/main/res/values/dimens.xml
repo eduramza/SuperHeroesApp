@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_view_tam">80dp</dimen>
+    <dimen name="recicler_padding">10dp</dimen>
+    <dimen name="text_name_recycler">22sp</dimen>
+    <dimen name="min_margin">5dp</dimen>
+    <dimen name="med_margin">10dp</dimen>
+</resources>
