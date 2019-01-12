@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void callingAPI(){
 
-        for (int i = 1; i < 999; i++){
+        for (int i = 1; i < Constants.TAM_MAX; i++){
             Call<Hero> call = apiService.getHeroById( Constants.API_KEY, i);
             call.enqueue(new Callback<Hero>() {
                 @Override
